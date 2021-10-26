@@ -1,0 +1,12 @@
+div {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    background-color: gray;
+}
+body{
+    background-color: gray;
+}
+button{
+    size:100px;
+}
