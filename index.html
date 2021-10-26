@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="main.js"></script>
+    <script src="style.css"></script>
+    
     
     
 </head>
@@ -14,7 +16,7 @@
 <button>Color</button>
 <button id='play1' >play1</button>
 <button id='play2' >play2</button>
-<button id='play3' >play3</button>
+<button>play3</button>
 </body>
 </html>
 
@@ -26,28 +28,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 </head> 
 <body> 
-<h4></h4> 
+<h4>Click Race</h4> 
 <p></p> 
  
-<button id='play' >hi</button> 
 <script>
-//sets a random absolute position to a html element; receives the html element 
-function moveElmRand(elm){ 
- elm.style.position ='absolute'; 
- elm.style.top = Math.floor(Math.random()*90+5)+'%'; 
- elm.style.left = Math.floor(Math.random()*90+5)+'%'; 
-} 
- 
-//get the #btn_test 
-let play = document.querySelector('#play'); 
- 
-//register to call moveElmRand() on mouseenter event to #btn_test 
-play.addEventListener('click', function(e){ moveElmRand(e);}); 
-let play1 = document.querySelector('#play1'); 
- 
-//register to call moveElmRand() on mouseenter event to #btn_test 
-play1.addEventListener('click', function(e){ moveElmRand(e);}); 
-//register click to #btn_test 
+
 </script>
 </body> 
 </html>
