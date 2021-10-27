@@ -25,3 +25,31 @@ div{
     left: 50%;
     display:inline;
 }
+
+.pink{
+    background-color: pink
+  }
+.blue{
+    background-color: blue;
+  }
+.green{
+    background-color: green;
+  }
+.yellow{
+    background-color: yellow;
+  }
+.magenta{
+    background-color: magenta;
+  }
+.red{
+    background-color: red;
+  }
+.orange{
+    background-color: orange;
+}
+.purple{
+    background-color: purple;
+}
+.gray{
+    background-color: grey;
+}

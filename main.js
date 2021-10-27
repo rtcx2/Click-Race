@@ -16,16 +16,22 @@ let play7button = document.getElementById("play7")
 let play8button = document.getElementById("play8")
 let play9button = document.getElementById("play9")
 
-let htmlheight = document.documentElement.clientHeight;
-let htmlwidth = document.documentElement.clientWidth;
-
 //let randomheight = Math.floor(Math.random() * htmlheight);
 //let randomwidth = Math.floor(Math.random() * htmlwidth);
-
+//this allows me to choose the random integer's ranges
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
   //This function took the largest amount of time to accomplish
+function changeColor(){
+  let allColors = ["blue ", "green", "red", "orange", "magenta", "orange", "yellow", "grey", "pink"]
+  let allButtons = [play1button, play2button, play3button, play4button, play5button, play6button, play7button, play8button, play9button]
+  let chosenColors = []
+  play1button.style.backgroundColor = allColors[getRndInteger(0, allColors.length)]
+  play2button.style.backgroundColor = allColors[getRndInteger(0, allColors.length)]
+  }
+
+  //This took up most of my time in the project it was really hard figuring out how to move the buttons randomly on the screen
 function moveButton(){
     play1button.style.margin = getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
     play2button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
@@ -39,6 +45,7 @@ function moveButton(){
     //play1button.style.marginBottom = randomheight+"px";
    // play1button.style.left = randomwidth+ "px";
     //play1button.style.top = randomheight+"px";
+    changeColor()
 }
 
 //document.getElementById("myDiv").style.margin = "500px 100px 200px 300px";
