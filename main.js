@@ -25,17 +25,17 @@ let htmlwidth = document.documentElement.clientWidth;
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
-
+  //This function took the largest amount of time to accomplish
 function moveButton(){
-    play1button.style.margin = getRndInteger(1, 200) + "px "+ getRndInteger(1, 200) +"px";
-    play2button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
-    play3button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
-    play4button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
-    play5button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
-    play6button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
-    play7button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
-    play8button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
-    play9button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play1button.style.margin = getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play2button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play3button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play4button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play5button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play6button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play7button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play8button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
+    play9button.style.margin = getRndInteger(1, 50)+"px "+getRndInteger(1, 700) +"px " +getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px";
     //play1button.style.marginBottom = randomheight+"px";
    // play1button.style.left = randomwidth+ "px";
     //play1button.style.top = randomheight+"px";

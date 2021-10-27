@@ -1,10 +1,12 @@
 
 button{
     position:absolute;
-    
 }
 div{
     position:absolute;
+    height: 200px;
+    width: 50%;
+    display: inline;
 }
 .playbutton {
    position:absolute;
