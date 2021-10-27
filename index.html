@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+<h1 id="title">Click Race</h1>
     <style>
         body {
-          max-width: 50px;
+          max-width: 100px;
           max-height: 50px;
-          margin: auto;
+          padding-left: 10%;
         }
         </style>
     
 </head>
 <body>
-<button id='play1' class='playbutton'  onclick='moveButton()' >color1</button>
-<div><button id='play2' class='playbutton'  onclick='moveButton()' >Color2</button></div>
-<div><button id='play3' class='playbutton'  onclick='moveButton()' >Color3</button></div>
-<div><button id='play4' class='playbutton'  onclick='moveButton()' >color4</button></div>
-<div><button id='play5' class='playbutton'  onclick='moveButton()' >Color5</button></div>
-<div><button id='play6' class='playbutton'  onclick='moveButton()' >Color6</button></div>
-<div><button id='play7' class='playbutton'  onclick='moveButton()' >color4</button></div>
-<div><button id='play8' class='playbutton'  onclick='moveButton()' >Color5</button></div>
-<div><button id='play9' class='playbutton'  onclick='moveButton()' >Color6</button></div>
+<div style="display:none;" id='playbuttons'>
+<button id='play1' class='playbutton'>color1</button>
+<button id='play2' class='playbutton'>Color2</button>
+<button id='play3' class='playbutton' >Color3</button>
+<button id='play4' class='playbutton' >color4</button>
+<button id='play5' class='playbutton' >Color5</button>
+<button id='play6' class='playbutton' >Color6</button>
+<button id='play7' class='playbutton' >color7</button>
+<button id='play8' class='playbutton' >Color8</button>
+<button id='play9' class='playbutton' >Color9</button></div>
+<container><button id='startbutton' onclick='startGame()'>Start Button</button></container>
 <script src="main.js"></script>
 <script src="style.css"></script>
 </body>

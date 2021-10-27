@@ -1,3 +1,6 @@
+h1 {
+    padding-left: 100px;
+  }
 
 button{
     position:absolute;
@@ -11,20 +14,7 @@ div{
 .playbutton {
    position:absolute;
   }
-#play1 {
-    position:absolute;
-    transition: .5s ease;
-    top: 50%;
-    left: 50%;
-    display:inline;
-}
-#play2 {
-    position:absolute;
-    transition: .5s ease;
-    top: 50%;
-    left: 50%;
-    display:inline;
-}
+
 
 .pink{
     background-color: pink
