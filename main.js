@@ -22,26 +22,26 @@ let htmlwidth = document.documentElement.clientWidth;
 //let randomheight = Math.floor(Math.random() * htmlheight);
 //let randomwidth = Math.floor(Math.random() * htmlwidth);
 
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min) ) + min;
+  }
+
 function moveButton(){
-    let randomheight = Math.floor(Math.random() * htmlheight);
-    let randomwidth = Math.floor(Math.random() * htmlwidth);
-    play1button.style.margin = randomwidth+"px "+randomheight +"px";
-    play2button.style.margin = randomwidth+"px "+randomheight +"px";
-    play3button.style.margin = randomwidth+"px "+randomheight +"px";
-    play4button.style.margin = randomwidth+"px "+randomheight +"px";
-    play5button.style.margin = randomwidth+"px "+randomheight +"px";
-    play6button.style.margin = randomwidth+"px "+randomheight +"px";
-    play7button.style.margin = randomwidth+"px "+randomheight +"px";
-    play8button.style.margin = randomwidth+"px "+randomheight +"px";
-    play9button.style.margin = randomwidth+"px "+randomheight +"px";
+    play1button.style.margin = getRndInteger(1, 200) + "px "+ getRndInteger(1, 200) +"px";
+    play2button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play3button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play4button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play5button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play6button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play7button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play8button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
+    play9button.style.margin = getRndInteger(1, 200)+"px "+getRndInteger(1, 200) +"px";
     //play1button.style.marginBottom = randomheight+"px";
    // play1button.style.left = randomwidth+ "px";
     //play1button.style.top = randomheight+"px";
-console.log("Document height: " + randomheight);
-console.log("Document width: " + randomwidth);
 }
 
-document.getElementById("myDiv").style.margin = "500px 100px 200px 300px";
+//document.getElementById("myDiv").style.margin = "500px 100px 200px 300px";
   
 
 

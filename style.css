@@ -1,14 +1,22 @@
-body{
-    max-width: 900px;
-    max-height:1000px;
-}
 
 button{
-    position:relative;
+    position:absolute;
     
 }
-
+div{
+    position:absolute;
+}
+.playbutton {
+   position:absolute;
+  }
 #play1 {
+    position:absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 50%;
+    display:inline;
+}
+#play2 {
     position:absolute;
     transition: .5s ease;
     top: 50%;
