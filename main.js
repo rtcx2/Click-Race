@@ -27,7 +27,6 @@ function getRndInteger(min, max) {
   }
 function changeColor(){
   let allColors = ["blue ", "green", "red", "orange", "magenta", "purple", "yellow", "grey", "pink"]
-  let chosenColors = []
   play1button.style.backgroundColor = allColors[getRndInteger(0, allColors.length)]
   play2button.style.backgroundColor = allColors[getRndInteger(0, allColors.length)]
   play3button.style.backgroundColor = allColors[getRndInteger(0, allColors.length)]
@@ -57,13 +56,13 @@ function moveButton(){
    // play1button.style.left = randomwidth+ "px";
     //play1button.style.top = randomheight+"px";
 
+    //The code below gave me a style error I could not work around but it did work for some reason. I just didn't want to deal with the style error
    /* for (let i = 0; i < 10; i++){
       console.log(allButtons[i])
       allButtons[i].style.margin = getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px "+getRndInteger(1, 50) + "px "+ getRndInteger(1, 700) +"px"
     } */
 }
 function startGame() {
-  document.getElementById("startbutton").style.display = "none"
   document.getElementById("title").style.display = "none"
   document.getElementById("playbuttons").onclick = determinebuton;
 
@@ -78,6 +77,7 @@ function determinebuton(e) {
     changeColor()
   }
 }
+
 //document.getElementById("myDiv").style.margin = "500px 100px 200px 300px";
   
 

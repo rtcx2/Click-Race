@@ -5,17 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<h1 id="title">Click Race</h1>
+<h1 id="Score">fsafasfsdasdw</h1>
+  <h2 id="title">Click Race
+    <button id='startbutton' onclick='startGame()'>Start Button</button>
+    <button id='startbutton1'>How to play</button></h2>
     <style>
         body {
-          max-width: 100px;
+          max-width: 300px;
           max-height: 50px;
-          padding-left: 10%;
+          padding-left: 25%;
         }
+        h1{
+          padding-left: 20px;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          background: black;
+          max-width: 400px;
+          max-height: 200px;
+          font-size: 20px;
+          color: white;
+          text-align: center;
+        }
+        h2{
+          padding-left: 30%;
+          padding-top: 40%;
+          max-width:200px;
+        }
+        .playbutton {
+
+background: transparent;
+border: none !important;
+font: size 30px;;
+}
         </style>
     
 </head>
-<body>
+
 <div style="display:none;" id='playbuttons'>
 <button id='play1' class='playbutton'>color1</button>
 <button id='play2' class='playbutton'>Color2</button>
@@ -26,7 +51,8 @@
 <button id='play7' class='playbutton' >color7</button>
 <button id='play8' class='playbutton' >Color8</button>
 <button id='play9' class='playbutton' >Color9</button></div>
-<container><button id='startbutton' onclick='startGame()'>Start Button</button></container>
+<body>
+
 <script src="main.js"></script>
 <script src="style.css"></script>
 </body>
