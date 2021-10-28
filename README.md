@@ -4,9 +4,7 @@ The player has their own cursor and will use the cursor to hover or click on spe
 The user will be given a button with a random color to click on
 The buttons will change color every time they are clicked on
 
-There will be a timer for both the AI or just the player to get as many as they can
-
-It either will be a player vs AI where the AI have their own cursor or I will make the game player vs. time
+There will be a timer for the player to get as many as they can
 
 Racing against the clock to get a certain score
 

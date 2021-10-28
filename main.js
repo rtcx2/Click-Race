@@ -20,14 +20,17 @@ let allButtons = [play1button, play2button, play3button, play4button, play5butto
 let play2buttons = document.getElementsByClassName("playbutton")
 let playerScore = 0
 let allColors = ["blue ", "green", "red", "orange", "magenta", "purple", "yellow", "grey", "pink"]
-let goalNumber = 30
+let goalNumber = 45
 let gameState = false
+let timeleft = 60
 //let randomheight = Math.floor(Math.random() * htmlheight);
 //let randomwidth = Math.floor(Math.random() * htmlwidth);
 //this allows me to choose the random integer's ranges
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
+
+  //Will determine the color needed to click on and the color of the buttons
 function changeColor(){
   play1button.style.backgroundColor = allColors[getRndInteger(0, allColors.length)]
   play2button.style.backgroundColor = allColors[getRndInteger(0, allColors.length)]
@@ -64,9 +67,17 @@ function moveButton(){
     } */
 }
 function startGame() {
+  timeleft = 60
+  goalNumber = 45
+  playerScore = 0
+  document.getElementById("points").innerHTML = "Score: "+ playerScore
   document.getElementById("title").style.display = "none"
+  document.getElementById("Score").style.display = "block"
+  document.getElementById("timer").innerHTML = "Timer: "+ timeleft
   document.getElementById("playbuttons").onclick = determinebuton;
   document.getElementById("goal").innerHTML = "Goal: "+ goalNumber
+  document.getElementById("gameover").style.display = "none"
+  document.getElementById("endbuttons").style.display = "none"
   gameState = true
   divbuttons.style.display = "block"
     moveButton()
@@ -75,7 +86,7 @@ function startGame() {
 }
 //Sets the timer for the game
 function gametime(){
-  let timeleft = 61
+
   function increment(value, step){
   return value-=step
   }
@@ -84,13 +95,14 @@ function gametime(){
         document.getElementById("timer").innerHTML = "Timer: "+ timeleft
         if(timeleft === 0){
               if(goalNumber <= playerScore){
-                console.log("You win")
-                divbuttons.style.display = "block"
+                document.getElementById("gameover").innerHTML = "You Win!!!"
               }
               else{
-                console.log("You lose")
+                document.getElementById("gameover").innerHTML = "You Lose..."
               }
-          divbuttons.style.display = "block"
+          document.getElementById("gameover").style.display = "block"
+          document.getElementById("endbuttons").style.display = "block"
+          divbuttons.style.display = "none"
           gameState = false  
           clearInterval(interval)
         }
@@ -115,7 +127,21 @@ function determinebuton(e) {
     }
   }
 }
+function rgb(){
+  if( document.body.style.backgroundImage === "url('rgb.gif')"){
+    document.body.style.backgroundImage = "url('normal')"
+  }
+  else{
+    document.body.style.backgroundImage = "url('rgb.gif')"
+  }
 
+}
+function menu(){
+  document.getElementById("title").style.display = "block"
+  document.getElementById("Score").style.display = "none"
+  document.getElementById("gameover").style.display = "none"
+  document.getElementById("endbuttons").style.display = "none"
+}
 //document.getElementById("myDiv").style.margin = "500px 100px 200px 300px";
   
 
