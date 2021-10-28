@@ -5,52 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<h1 id="Score">fsafasfsdasdw</h1>
+<h1 id="Score">
+  <div id="timer">Timer:</div>
+  <div id="points">Score: 0</div>
+  <div id="goal">Goal:</div>
+  <div id="Color">Color</div>
+</h1>
   <h2 id="title">Click Race
     <button id='startbutton' onclick='startGame()'>Start Button</button>
-    <button id='startbutton1'>How to play</button></h2>
+    <button id='startbutton'>How to play</button></h2>
     <style>
         body {
-          max-width: 300px;
-          max-height: 50px;
+          max-width: 100vw;
+          max-height: 100vh;
           padding-left: 25%;
         }
         h1{
-          padding-left: 20px;
-          padding-top: 50px;
-          padding-bottom: 50px;
+          padding-left: 40px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-right: 40px;
           background: black;
-          max-width: 400px;
-          max-height: 200px;
+          max-width: 100px;
+          max-height: 100px;
           font-size: 20px;
           color: white;
           text-align: center;
+          margin-left: 30%;
         }
         h2{
-          padding-left: 30%;
-          padding-top: 40%;
-          max-width:200px;
+          padding-left: 50%;
+          padding-bottom: 0%;
+          max-width:700px;
+          font-size: 50px;
+          text-align: center;
+          margin-right: 40%;
         }
         .playbutton {
 
-background: transparent;
-border: none !important;
-font: size 30px;;
-}
+        background: transparent;
+        border: none !important;
+        font: size 40px;
+        }
+
+      .startbutton {
+
+         background: transparent;
+        border: none !important;
+          font: size 40px;
+    }
         </style>
     
 </head>
 
 <div style="display:none;" id='playbuttons'>
-<button id='play1' class='playbutton'>color1</button>
-<button id='play2' class='playbutton'>Color2</button>
-<button id='play3' class='playbutton' >Color3</button>
-<button id='play4' class='playbutton' >color4</button>
-<button id='play5' class='playbutton' >Color5</button>
-<button id='play6' class='playbutton' >Color6</button>
-<button id='play7' class='playbutton' >color7</button>
-<button id='play8' class='playbutton' >Color8</button>
-<button id='play9' class='playbutton' >Color9</button></div>
+<button id='play1' class='playbutton'>ㅤ</button>
+<button id='play2' class='playbutton'>ㅤ</button>
+<button id='play3' class='playbutton' >ㅤ</button>
+<button id='play4' class='playbutton' >ㅤ</button>
+<button id='play5' class='playbutton' >ㅤ</button>
+<button id='play6' class='playbutton' >ㅤ</button>
+<button id='play7' class='playbutton' >ㅤ</button>
+<button id='play8' class='playbutton' >ㅤ</button>
+<button id='play9' class='playbutton' >ㅤ</button></div>
 <body>
 
 <script src="main.js"></script>
