@@ -142,6 +142,15 @@ function menu(){
   document.getElementById("gameover").style.display = "none"
   document.getElementById("endbuttons").style.display = "none"
 }
+
+function howtoplay(){
+  document.getElementById("title").style.display = "none"
+  document.getElementById("howtoplay").style.display = "block"
+}
+function backbutton(){
+  document.getElementById("title").style.display = "block"
+  document.getElementById("howtoplay").style.display = "none"
+}
 //document.getElementById("myDiv").style.margin = "500px 100px 200px 300px";
   
 

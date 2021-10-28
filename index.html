@@ -13,14 +13,26 @@
 </h1>
   <h2 id="title" >Click Race
     <button id='startbutton' onclick='startGame()'>Start Button</button>
-    <button id='startbutton'>How to play</button>
+    <button id='startbutton' onclick='howtoplay()'>How to play</button>
     <button id='startbutton' onclick ='rgb()'>RGB background</button></h2>
-    <h3 id='gameover' style="display:none;">Hello world</h3>
+    <h4 id='howtoplay' style="display:none;"><p>Welcome to Click Race! There are only a few simple rules to learning the game.</p>
+      <p>1. Your mouse is your controller. You will only be using your mouse to move around</p>
+      <p>2. When you start the game you will be given a goal, a timer, and a color to left click on</p>
+      <p>3. The color, is the color button you need to click to gain one point.</p>
+      <p>4. If you click the wrong color, you will lose 1 point from your score</p>
+      <p>5. Your goal will be the amount you need to win.</p>
+      <p>6. Good Luck!</p>
+      <button id='backbutton' onclick='backbutton()'>Back</button></h4>
+    <h3 id='gameover' style="display:none;"></h3>
     
     <div id='endbuttons' style="display:none;"><button id='startbutton' onclick ='startGame()'>Restart</button>
     <button id='menu' onclick ='menu()'>Menu</button></div>
 
     <style>
+      h4{
+        font-size:20px;
+        margin-top: 15%;
+      }
         h3{
          text-align: center;
          font-size:50px;
