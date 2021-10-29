@@ -151,6 +151,15 @@ function backbutton(){
   document.getElementById("title").style.display = "block"
   document.getElementById("howtoplay").style.display = "none"
 }
+
+function changingtitleFont(){
+
+    interval = setInterval(()=>{
+    document.getElementById("title").style.color = allColors[getRndInteger(0, allColors.length)]
+      }, 500)
+}
+changingtitleFont()
+
 //document.getElementById("myDiv").style.margin = "500px 100px 200px 300px";
   
 
